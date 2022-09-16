@@ -13,7 +13,7 @@ public class Calculator {
 
         System.out.println("Välj operation");
 
-        while (isRunning == true){
+        do {
 
             for (int i = 0; i < operation.length; i++) {
             System.out.println(operation[i]);
@@ -22,7 +22,7 @@ public class Calculator {
             userChoice = sc.nextInt();
 
             if (userChoice== 9){
-                break;
+                isRunning = false;
             }
             else {
             System.out.println("Mata in två nummer:");
@@ -45,11 +45,12 @@ public class Calculator {
                     Math.smallerThan(x,y);
                 } else if (userChoice==8) {
                     Math.equals(x,y);
-                } else if (userChoice==9){
-                    break;
-                }
+                } /*else if (userChoice==9){
+                    isRunning == false;
+                }*/
             }
             }
+        while (isRunning == true);
         }
 
 
