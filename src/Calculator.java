@@ -50,7 +50,7 @@ public class Calculator {
                 }*/
             }
             }
-        while (isRunning == true);
+        while (isRunning);
         }
 
 
